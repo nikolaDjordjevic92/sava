@@ -1,0 +1,22 @@
+{
+  "name": "sava",
+  "version": "1.0.0",
+  "description": "Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node dist/index.js"
+  },
+  "author": "Nikola Djordjevic",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.8.10",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.5.2"
+  }
+}
