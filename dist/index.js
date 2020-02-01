@@ -5,8 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const App_1 = __importDefault(require("./App"));
 const mongoose_1 = __importDefault(require("mongoose"));
-const port = 3457;
-let mongoDB = 'mongodb://localhost:27017/sava';
+const port = process.env.PORT;
+let mongoDB = process.env.MONGO_DB;
 mongoose_1.default.connect(mongoDB, { useNewUrlParser: true }).then(() => {
     console.log('Connected to database mongodb');
 }).catch((err) => console.log(err));

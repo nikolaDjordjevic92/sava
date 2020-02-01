@@ -1,9 +1,10 @@
 import App from './App';
 import mongoose from 'mongoose';
 
-const port = 3457;
 
-let mongoDB = 'mongodb://localhost:27017/sava';
+const port = process.env.PORT;
+
+let mongoDB = process.env.MONGO_DB;
 mongoose.connect(mongoDB, {useNewUrlParser: true}).then(() => {
   console.log('Connected to database mongodb');
 }).catch((err) => console.log(err));

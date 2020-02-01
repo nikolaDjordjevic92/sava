@@ -7,7 +7,7 @@ class App {
   constructor() {
     this.express = express();
     this.express.use('/', routes);
-
+    
   }
 
 }
